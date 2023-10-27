@@ -4,11 +4,12 @@ function encrypt(){
         document.getElementById("clave").value
     );
     document.getElementById("mensajeEncriptado").value = encrypted;
+    console.log("Patrañas")
 }
 
 function decrypt(){
     var decrypted = CryptoJS.AES.decrypt(
-        document.getElementById("mensajeEncriptado").innerHTML,
+        document.getElementById("mensajeEncriptado").value,
         document.getElementById("clave").value
      ).toString(CryptoJS.enc.Utf8);
      document.getElementById("mensajeDesencriptado").value = decrypted;
