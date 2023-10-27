@@ -14,3 +14,8 @@ function decrypt(){
      document.getElementById("mensajeDesencriptado").value = decrypted;
 }
 
+var encryptButton = document.getElementById("encryptButton")
+var decryptButton = document.getElementById("decryptButton")
+
+encryptButton.addEventListener("click",encrypt)
+decryptButton.addEventListener("click",decrypt)

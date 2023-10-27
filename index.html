@@ -33,23 +33,23 @@
         <div class="row">
             <div class="col-md-3">
                 <label for="exampleInputEmail1" class="form-label">Texto para encriptar</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input id="mensajeDesencriptado" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
             <div class="col-md-3">
                 <label for="exampleInputPassword1" class="form-label">Texto encriptado</label>
-                <input type="text" class="form-control" id="exampleInputPassword1">
+                <input id="mensajeEncriptado" type="text" class="form-control" id="exampleInputPassword1">
             </div>
         </div>
         <div>
             <label for="exampleInputPassword1" class="form-label">Llave</label>
-            <input type="text" class="form-control" id="exampleInputPassword1">
+            <input id="clave" type="text" class="form-control" id="exampleInputPassword1">
         </div>
         <div class="row">
             <div class="col-md-3">
-                <button type="submit" class="btn btn-primary">Encriptar Texto</button>
+                <button id="encryptButton" type="button" class="btn btn-primary">Encriptar Texto</button>
             </div>
             <div class="col-md-3">
-                <button type="submit" class="btn btn-primary">Desencriptar Texto</button>
+                <button id="decryptButton" type="button" class="btn btn-primary">Desencriptar Texto</button>
             </div>
         </div>
     </form>
